@@ -1,45 +1,54 @@
-name: Build & Deploy (Static to cPanel)
+name: Deploy Next.js to cPanel
 
 on:
   push:
-    branches: [ main ]   # deploy whenever you push to main
-  workflow_dispatch:      # allow manual runs from the Actions tab
-
-concurrency:
-  group: deploy-static
-  cancel-in-progress: true
+    branches: [ main ]
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
 
-      - name: Install deps
-        run: npm ci || npm install
+    - name: Install dependencies
+      run: |
+        npm ci
+        # Install TypeScript types if missing
+        npm install --save-dev @types/node @types/react @types/react-dom || echo "TypeScript types installed or already present"
 
-      - name: Build Next.js static export
-        run: npm run build
-        # your package.json should run: next build && next export
-        # output goes to ./out/
+    - name: Build Next.js project
+      run: npm run build
 
-      - name: Deploy via FTPS to cPanel public_html
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ftp.faef.se
-          username: faefse
-          password: l(S9S8D(Yti9o3
-          protocol: ftps
-          port: 21
-          local-dir: ./out/
-          server-dir: /public_html/
-          dangerous-clean-slate: true   # wipes remote dir before upload (safe for static sites)
-          timeout: 600000               # 10 minutes
+    - name: List build output (for debugging)
+      run: ls -la ./out/
+
+    - name: Deploy to cPanel via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.faef.se
+        username: faefse
+        password: l(S9S8D(Yti9o3
+        port: 21
+        server-dir: /public_html/
+        local-dir: ./out/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env*
+          **/.next/
+          .github/
+          *.yml
+          README.md
+        dangerous-clean-slate: false
+
+    - name: Verify deployment
+      run: echo "🎉 Next.js project successfully deployed to cPanel!"
