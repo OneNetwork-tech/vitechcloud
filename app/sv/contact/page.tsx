@@ -69,9 +69,7 @@ export default function Contact() {
 </button>
       </form>
 
-      <p className="mt-4 text-xs text-gray-500">
-        Tips: Lägg till SPF, DKIM och DMARC i er DNS för bättre e-postleverans.
-      </p>
+       
     </div>
   );
 }

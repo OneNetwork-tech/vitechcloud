@@ -1,4 +1,4 @@
-name: 🚀 Deploy to cPanel
+name: 🚀 Deploy Static Site
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -27,17 +27,20 @@ jobs:
 
       - name: 📁 Verify build output
         run: |
-          echo "Build completed. Checking output directory..."
+          echo "=== Build Output ==="
           ls -la
           if [ -d "out" ]; then
             echo "✅ Found 'out' directory"
             ls -la out/
+            echo "Number of files in out/: $(find out -type f | wc -l)"
           else
-            echo "🔍 Looking for build output..."
-            find . -name "*.html" | head -10
+            echo "❌ No 'out' directory found"
+            echo "Current directory contents:"
+            ls -la
           fi
 
       - name: 🌐 Deploy to cPanel
+        if: success() && hash('out')
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.vitechcloud.se

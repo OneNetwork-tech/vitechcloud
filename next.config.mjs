@@ -4,8 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  },
-  // Remove any module.exports if using ES modules
+  }
 }
 
-module.exports = nextConfig
+export default nextConfig
