@@ -1,21 +1,16 @@
-name: 🚀 Build & Deploy Static Site to cPanel
+name: 🚀 Deploy to cPanel
 
 on:
   push:
-    branches: [ main ]       # auto-deploy when you push to main
-  workflow_dispatch:          # allow manual runs from the Actions tab
-
-concurrency:
-  group: vitechcloud-static
-  cancel-in-progress: true
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
+    
     steps:
-      - name: 📥 Checkout Repository
+      - name: 📥 Checkout code
         uses: actions/checkout@v4
 
       - name: ⚙️ Setup Node.js
@@ -24,31 +19,20 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: 📦 Install Dependencies
-        run: npm ci || npm install
+      - name: 📦 Install dependencies
+        run: npm ci
 
-      - name: 🏗️ Build Next.js Static Site
+      - name: 🏗️ Build project
         run: npm run build
-        # This should run: next build && next export
-        # Output is placed in the ./out/ folder
 
-      - name: 🧹 Verify Build Output
-        run: ls -R out || echo "❌ No /out directory found!"
-
-      - name: 🌐 Deploy to cPanel via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 🌐 Deploy to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ftp.vitechcloud.se
-          username: vitechuser
-          password: Anjina@1985
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftps
           local-dir: ./out/
-          server-dir: /public_html/
-          state-name: .ftp-deploy-sync.json
-          dangerous-clean-slate: true    # deletes remote folder before upload
-          timeout: 600000
-          log-level: verbose
-
-      - name: ✅ Deployment Complete
-        run: echo "🎉 Deployment to cPanel public_html completed successfully!"
+          server-dir: ./public_html/
+          dangerous-clean-slate: true
