@@ -1,0 +1,1 @@
+export default function Root(){return(<html><head><meta httpEquiv='refresh' content='0; url=/sv/'/><script dangerouslySetInnerHTML={{__html:`window.location.replace('/sv/');`}}/></head><body>Redirecting to <a href='/sv/'>/sv/</a>…</body></html>)}

@@ -1,0 +1,1 @@
+import HeaderBase from './HeaderBase';export default function HeaderEn(){return(<HeaderBase brand='ViTech Cloud' nav={[{href:'/en/services/',label:'Services'},{href:'/en/pricing/',label:'Pricing'},{href:'/en/cases/',label:'Case studies'},{href:'/en/about/',label:'About'}]} cta={{href:'/en/contact/',label:'Contact'}} localeSwitch={{href:'/sv/',label:'Svenska'}}/>)}
