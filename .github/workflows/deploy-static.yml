@@ -27,20 +27,14 @@ jobs:
 
       - name: 📁 Verify build output
         run: |
+          echo "Build completed. Checking output directory..."
           ls -la
-          echo "Checking for build output..."
           if [ -d "out" ]; then
             echo "✅ Found 'out' directory"
             ls -la out/
-          elif [ -d "dist" ]; then
-            echo "✅ Found 'dist' directory"
-            ls -la dist/
-          elif [ -d "build" ]; then
-            echo "✅ Found 'build' directory"
-            ls -la build/
           else
-            echo "❌ No build directory found"
-            ls -la
+            echo "🔍 Looking for build output..."
+            find . -name "*.html" | head -10
           fi
 
       - name: 🌐 Deploy to cPanel
@@ -54,3 +48,4 @@ jobs:
           local-dir: ./out/
           server-dir: ./public_html/
           dangerous-clean-slate: true
+          log-level: verbose
