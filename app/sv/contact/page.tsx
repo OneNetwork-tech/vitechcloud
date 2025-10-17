@@ -63,13 +63,15 @@ export default function Contact() {
 
         <button
   type="submit"
-  className="bg-brand.primary text-black px-5 py-3 rounded-md w-full sm:w-fit hover:opacity-90 border border-gray-300 shadow-sm"
+  className="bg-brand.primary text-black px-5 py-3 rounded-md w-full sm:w-fit hover:opacity-90 border border-transparent focus:border-gray-500 focus:outline-none"
 >
   Skicka
 </button>
-        </form>
+      </form>
 
-      
+      <p className="mt-4 text-xs text-gray-500">
+        Tips: Lägg till SPF, DKIM och DMARC i er DNS för bättre e-postleverans.
+      </p>
     </div>
   );
 }
