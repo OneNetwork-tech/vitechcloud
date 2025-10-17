@@ -1,0 +1,43 @@
+name: 🚀 Deploy Static Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'out/**'  # Only trigger when out folder changes
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📁 Verify out directory exists
+        run: |
+          if [ ! -d "out" ]; then
+            echo "❌ No 'out' directory found. Building first..."
+            # Setup Node and build
+            uses: actions/setup-node@v4
+            with:
+              node-version: 20
+            run: |
+              npm ci
+              npm run build
+          else
+            echo "✅ 'out' directory found, deploying directly"
+          fi
+
+      - name: 🌐 Deploy out folder to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.vitechcloud.se
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps
+          local-dir: ./out/
+          server-dir: ./public_html/
+          dangerous-clean-slate: true

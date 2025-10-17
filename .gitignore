@@ -7,8 +7,8 @@ yarn-error.log*
 # Production builds
 dist/
 build/
-.out/
-.next/
+#.out/
+#.next/
 
 # Environment variables
 .env
@@ -69,3 +69,4 @@ pids
 *.pid
 *.seed
 *.pid.lock
+

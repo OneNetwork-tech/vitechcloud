@@ -1,0 +1,241 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/_not-found/page-1fe41d8df168b155.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/layout-7a4aa6151778c833.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/page-c007895724e595e6.js"
+    ],
+    "/en/about/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/about/page-43d25fe93e6fe640.js"
+    ],
+    "/en/layout": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/css/e59c12958c67ff42.css",
+      "static/chunks/231-87925b9c7247c60f.js",
+      "static/chunks/app/en/layout-2af3a9407f695cbe.js"
+    ],
+    "/en/cases/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/cases/page-b42ac7cbaffa7bd3.js"
+    ],
+    "/en/contact/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/contact/page-52f8f00301bdf2b9.js"
+    ],
+    "/en/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/231-87925b9c7247c60f.js",
+      "static/chunks/app/en/page-b3c3b2ff61dde292.js"
+    ],
+    "/en/pricing/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/pricing/page-45b223056984b355.js"
+    ],
+    "/en/services/booking-system/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/booking-system/page-dbbc4a4d9b80376a.js"
+    ],
+    "/en/services/communication-alternatives/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/communication-alternatives/page-d57a6accef7e571b.js"
+    ],
+    "/en/services/customer-ticketing/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/customer-ticketing/page-074ffbd5f35d7e45.js"
+    ],
+    "/en/services/education-platform/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/education-platform/page-9e4bfab9f1f3b581.js"
+    ],
+    "/en/services/it-monitoring/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/it-monitoring/page-6b075a84639a31af.js"
+    ],
+    "/en/services/open-source-communication/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/open-source-communication/page-7299a5284d6a3ff6.js"
+    ],
+    "/en/services/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/page-df3c51bc013fa8d1.js"
+    ],
+    "/en/services/school-system/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/school-system/page-603fce336bbd0138.js"
+    ],
+    "/en/services/support-system/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/en/services/support-system/page-5ddb0995e9a376ff.js"
+    ],
+    "/sv/about/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/about/page-2e6fb362bf72e71e.js"
+    ],
+    "/sv/layout": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/css/e59c12958c67ff42.css",
+      "static/chunks/231-87925b9c7247c60f.js",
+      "static/chunks/app/sv/layout-7022238331adcbdc.js"
+    ],
+    "/sv/cases/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/cases/page-0c2a891e6d0a77ce.js"
+    ],
+    "/sv/contact/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/contact/page-7f825772cce3369f.js"
+    ],
+    "/sv/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/231-87925b9c7247c60f.js",
+      "static/chunks/app/sv/page-48f1f2ba84665660.js"
+    ],
+    "/sv/pricing/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/pricing/page-ec25af06abc2413b.js"
+    ],
+    "/sv/services/bokningssystem/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/bokningssystem/page-4fe2bf9e9991e2e8.js"
+    ],
+    "/sv/services/it-overvakning/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/it-overvakning/page-d7c6e61657b3fd54.js"
+    ],
+    "/sv/services/kommunikationsalternativ/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/kommunikationsalternativ/page-aaad6b5b6e2c7497.js"
+    ],
+    "/sv/services/kundtjanst-och-arendehantering/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/kundtjanst-och-arendehantering/page-29856feddd19d946.js"
+    ],
+    "/sv/services/oppen-kallkod-kommunikation/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/oppen-kallkod-kommunikation/page-332ae963b53d5cf3.js"
+    ],
+    "/sv/services/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/page-ef854c219c620b1e.js"
+    ],
+    "/sv/services/skolsystem/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/skolsystem/page-290126e50b28b975.js"
+    ],
+    "/sv/services/supportsystem/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/supportsystem/page-10fc7b598276edf0.js"
+    ],
+    "/sv/services/utbildningsplattform/page": [
+      "static/chunks/webpack-cb86a99cd2f791d1.js",
+      "static/chunks/fd9d1056-62aaf4b921c84028.js",
+      "static/chunks/23-83259811f348ae3a.js",
+      "static/chunks/main-app-93d5055125631c78.js",
+      "static/chunks/app/sv/services/utbildningsplattform/page-fae030789d7241c0.js"
+    ]
+  }
+}
